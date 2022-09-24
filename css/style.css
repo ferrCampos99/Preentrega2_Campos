@@ -1,0 +1,553 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,700;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2? familia= Oswald:peso@200;300;400;500 &family= Roboto:ital,wght@0,100;0,300;0,400;0,700;1,100;1,700 & display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+}
+html{
+    font-size: 62.5%;
+}
+
+body{
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-color: rgb(7, 8, 8);
+}
+
+/* INICIO INDEX/PAG."INICIO" */
+
+nav{
+    text-decoration: none;
+    background-color: rgba(7, 8, 8, .5);
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    z-index: 8;
+    padding: 2rem;
+    
+}
+
+nav a img{
+    width: 13rem;
+}
+
+nav ul{
+    display: inline-block;
+}
+
+nav ul li{
+    list-style: none;
+    font-family: 'Oswald', sans-serif;
+    font-size: 2rem;
+    display: inline-block;
+    margin-right: 4px;
+}
+
+nav ul li a:hover{
+    color: goldenrod;
+     font-weight: 600;
+     /* subrayado animado */
+     background-size: 100% 2px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: whitesmoke;
+    align-content: center;
+    text-align: right;
+    /* subrayado */
+    background-image: linear-gradient(currentColor, currentColor);
+    background-position: 0% 100%;
+    background-repeat: no-repeat;
+    background-size: 0% 2px;
+    transition: background-size .3s;
+}
+
+header{
+    width: 100%;
+    height: 300px;
+    position: relative;
+}
+
+header img{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+header #caption{
+    background-color: rgba(0, 0, 0, 0.479);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Oswald', sans-serif;
+}
+
+header #caption #caption-hijo{
+    color: white;
+    width: 60%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    align-items: center;
+    justify-content: center;
+}
+
+#caption-hijo p{
+    font-size: 1.2rem;
+}
+
+#caption-hijo h1{
+    color: goldenrod;
+}
+
+#section1-inicio{
+    background-color: whitesmoke;
+
+}
+
+#section1-inicio p, #section1-inicio h2{
+    color: black;
+}
+
+.section-inicio{
+    padding: 10rem;
+    text-align: center;
+    font-size: 2rem;
+}
+
+#section2-inicio{
+    width: 100%;
+}
+
+.align-section2{
+    width: 100%;
+    height: 600px;
+    position: relative;
+}
+
+.align-section2 img{
+    height: 600px;
+    width: 100%;
+    display: block;
+    object-fit: cover;
+}
+
+.text-section2{
+    width: 100%;
+    height: 600px;
+    top: 0;
+    left: 0;
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.3rem;
+    position: absolute;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-content: center;
+    gap: 3rem;
+    padding: 12rem;
+    background-color: rgba(0, 0, 0, 0.712);
+}
+
+.text-section2 h2{
+    color: goldenrod;
+}
+
+.text-section2 button{
+    background-color: rgba(253, 251, 251, 0.822);
+    color: black;
+    font-weight: bolder;
+    padding: 1rem;
+    border-radius: 3rem;
+}
+
+.text-section2 button:hover{
+    background-color: rgb(29, 29, 29);
+    color: rgba(233, 200, 14, 0.822);
+}
+
+/* ETIQUETAS DE FOOTER IGUAL EN TODAS LAS PAG */
+
+#footer{
+    width: 100%;
+}
+
+.text-footer{
+   font-size: 15px;
+}
+
+.iconos-footer{
+    font-size: 15px;
+}
+
+/* FIN INDEX/PAG."INICIO" */
+
+/* INICIO PAG. TATUAJES Y PAG. DISEÑOS */
+/* deje ambas pag en unas mismas etiquetas porque por ahora seran basicamente iguales, mas adelante,
+si necesitara cambiar algo de forma independiente */
+
+header #capa-img{
+    background-color: rgba(0, 0, 0, 0.479);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+header #capa-img #capa-img-hijo{
+    color: white;
+    width: 60%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    align-items: center;
+    justify-content: flex-start;
+    margin-left: 30px;
+    font-size: 1.3rem;
+    font-family: 'Oswald', sans-serif;;
+}
+
+@keyframes text-header{
+    from{opacity: 0}
+    to{opacity: 1}
+}
+
+#capa-img-hijo{
+    animation-name: text-header;
+    animation-duration: 3s;
+}
+
+#capa-img-hijo h1{
+    color: goldenrod;
+}
+
+#capa-img-hijo button{
+    background-color: rgba(253, 251, 251, 0.822);
+    color: black;
+    font-weight: bolder;
+    padding: 1rem;
+    border-radius: 3rem;
+}
+
+.button-inicio:hover{
+    transform: scale(1.2);
+    transition: transform 1s;
+}
+
+#capa-img-hijo button:hover{
+    background-color: rgb(29, 29, 29);
+    color: rgba(233, 200, 14, 0.822);
+}
+
+/* acaba header */
+
+/* empieza main */
+
+#txt-main{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 3rem;
+    padding: 3rem;
+    font-size: 1.5rem;
+}
+
+#align-imgs{
+    width: 100%;
+}
+
+.align-imgs-hijos{
+    object-fit: cover;
+}
+
+.align-imgs-hijos img{
+       width: 100%;
+       /* height: 600px; */
+       align-items: center;
+       padding: 4rem;
+       object-fit: cover;
+       /* display: block; */
+}
+
+/* INICIO PAG PREGUNTAS */
+
+#encabezado{
+    background-color: rgba(245, 245, 245, 0.795);
+    text-align: center;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    height: 200px;
+}
+
+#encabezado h1, #encabezado p{
+    color: black;
+}
+
+#encabezado h1{
+   font-size: 2.5rem;
+}
+
+#encabezado p{
+    font-size: 1.7rem;
+}
+
+#style-parraf{
+    text-align: center;
+    font-size: 1.1rem;
+    padding: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+}
+
+#style-parraf h2{
+    font-weight: 2rem;
+}
+
+#style-parraf p{
+    font-size: 1.5rem;
+    color: rgba(245, 245, 245, 0.932);
+}
+
+/* INICIO PAG CONTACTO */
+
+#bg-header{
+    text-align: center;
+    padding: 5rem;
+    height: 200px;
+}
+
+#align-box{
+    display: flex;
+    width: 100%;
+}
+
+.align-box-hijo{
+    display: flex;
+    width: 50%;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 6rem;
+}
+
+.bg-contact{
+    background: linear-gradient(to bottom right, rgb(42, 42, 48), white);
+    width: 100%;
+    display: block;
+    padding: 3rem;
+}
+
+.align-contact{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    flex-direction: column;
+    align-content: center;
+    padding: 2rem;
+    gap: 2rem;
+}
+
+.box-up{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    background-color: rgb(252, 251, 251);
+    padding: 2rem;
+    text-align: center;
+
+}
+
+#form-style{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 3rem;
+    gap: 1rem;
+    width: 100%;
+}
+
+textarea{
+    width: 100%;
+}
+
+#button-contact{
+    color: black;
+    padding: 5px;
+    border-radius: 3rem;
+    width: 100px;
+}
+
+label{
+    color: black;
+}
+
+.align-box-hijo path{
+    color: black;
+    display: flex;
+}
+
+.align-box-hijo h3{
+    color: black;
+}
+
+.align-box-hijo iframe{
+    display: flex;
+    width: auto;
+    height: 25rem;
+}
+
+.align-contact iframe{
+    display: flex;
+    width: 100%;
+}
+
+/* =====================inicia grid============================== */
+
+.contenedor{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "nav"
+    "header"
+    "main"
+    "pie";
+}
+
+#nav{
+   grid-area: nav;
+}
+
+#header{
+   grid-area: header;
+}
+
+#main{
+   grid-area: main;
+}
+
+#footer{
+    grid-area: pie;
+}
+
+.align-section2 img{
+    padding: 3rem;
+}
+
+.text-footer, .iconos-footer{
+    padding: 3rem;
+}
+
+/* INICIA MEDIA QUERY DE PAG INDEX/INICIO */
+
+@media (min-width:768px){
+    .contenedor{
+        grid-template-columns: repeat(2,1fr);
+        grid-template-areas: 
+        "nav nav"
+        "header header"
+        "main main"
+        "pie pie";
+    }
+
+    #section2-inicio{
+        display: flex;
+    }
+
+    #footer{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .text-footer{
+        /* width: 50%; */
+    }
+
+    .iconos-footer{
+        /* width: 50% */
+    }
+}
+
+@media (min-width:1024px){
+    .contenedor{
+        grid-template-columns: repeat(2,1fr);
+    }
+
+    #caption-hijo{
+        flex-direction: column;
+    }
+
+    #section2-inicio{
+        padding: 5rem; 
+    }
+
+
+}
+
+/* ================FIN MEDIA QUERY PAG INDEX/INICIO===================== */
+
+/* ================INICIO MEDIA QUERY PAG TATUAJES========================= */
+
+.align-imgs-hijos{
+    padding: 3rem;
+}
+
+@media (min-width:768px){
+    .contenedor{
+        grid-template-columns: repeat(2,1fr);
+        grid-template-areas: 
+        "nav nav"
+        "header header"
+        "main main"
+        "pie pie";
+    }
+
+    .align-imgs-hijos{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        align-items: stretch;
+        flex-wrap: wrap;
+    }
+
+    .align-imgs-hijos img{
+        width: 50%;
+    }
+}
+
+@media(min-width:1024px){
+    .align-imgs-hijos{
+        flex-direction: row;
+
+        width: 100%;
+    }
+    
+    .align-imgs-hijos img{
+        width: 33.3%;
+    }
+}
